@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>给小仙女吖</title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding: 0;
+				background-color: #f9ecee;
+
+			}
+			ul,li{
+				list-style: none;
+			}
+			.tou{
+				width:100%;
+				height: 132px;
+				
+				margin-top: 0px;
+				z-index:100;
+				background-color: #fac4cc;
+			}
+			.cover{
+				width: 100%;
+				height: 132px;
+				z-index:100;
+				background-color: #fac4cc;
+				
+			}
+			.touz{
+				width: 1180px;
+				height: 132px;
+				margin:0 auto; 	
+				font-size: 60px;	
+				background-color: #fac4cc;	
+			}
+			.box{
+				width: 800px;
+				height: 362px;
+				
+				
+				position: relative;
+				overflow: hidden;
+				margin:0 auto;
+			}
+			.slider{
+				width: 5600px;
+				position: absolute;
+				left: -800px;
+				background-color: #f9ecee;
+			}
+			.slide{
+				width: 800px;
+				overflow: hidden;
+				float: left;
+
+			}
+			.box>img{
+				display: block;
+				width: 60px;
+				height: 60px;
+				text-align: center;
+				cursor: pointer;
+				color: #fff;
+				top: 175px;
+				line-height: 50px;
+				/*background: rgb(255,0,0);*/
+				font-size: 30px;
+				position: absolute;
+				/* display: none; */
+				opacity: 0;
+			}
+			#left{
+				top:125px;
+				left: 15px;
+			}
+			#right{
+				top:125px;
+				right: 15px;
+			}
+			.nav{
+				position: absolute;
+				left: 330px;
+				bottom: 20px;
+			}
+			.nav>li{
+				float: left;
+				width: 20px;
+				height: 20px;
+				background: #ccc;
+				cursor: pointer;
+				margin: 0 10px;
+				border-radius: 50%;
+				text-align: center;
+			}
+			.nav .active{
+				background: red;
+				color: #476954;
+			}
+			#but{
+				width: 400px;
+				height: 60px;
+				margin:100px auto;
+			}
+			#but1{
+				width: 400px;
+				height: 60px;
+				font-size: 20px;
+				font-family:"Times New Roman", Times, serif;
+				border-radius: 5px;
+				background-color: #ffcccc;
+				font-weight: bold;
+				cursor: pointer;
+			}
+			#butt{
+				width: 400px;
+				height: 500px;
+				margin:300px auto;
+				background-image: url(b.png) ;
+
+    			background-size:100% 100%;  	
+			}
+			#butt1{
+				width: 400px;
+				height: 120px;
+				font-size: 22px;
+				font-family:"Times New Roman", Times, serif;
+				border-radius: 15px;
+				background-color: #ffcccc;
+				font-weight: bold;
+				cursor: pointer;
+				margin-top: 370px;
+			
+			}
+			#kuang{
+				text-align:center;
+				margin-top: 100px;
+    			background-size:100% 100%;
+				width: 100%;
+				height: 800px;
+				background-image: url(b.jpg) ;
+			}
+			#tanc{
+				width: 800px;
+				height: 800px;
+				border:3px solid #aca9d3;
+				position: absolute;
+				top:130px;
+				left: 25%;
+				z-index:1002;
+				background-color: #ffffff;
+				display: none;
+				background-image: url(b1.png) ;
+				
+
+			}
+			#z{
+				width: 730px;
+				height: 800px;
+				margin:0 auto;
+				font-family:"FangSong";
+				font-size: 20px;
+			}
+			#tb1{
+				width: 200px;
+				height: 45px;
+				border:1.5px solid #ffcccc;
+				border-radius: 5px;
+				font-size: 15px;
+				color: #ffffff;
+				margin-top: 20px;
+				margin-left: 30px;
+				float: left;
+				background-color: #ffcccc;
+				font-weight: bold;
+				cursor: pointer;
+			}
+			#tb2{
+				width: 200px;
+				height: 45px;
+				border:1px solid #a5d8da;
+				border-radius: 5px;
+				font-size: 15px;
+				color: #ffffff;
+				margin-top: 20px;
+				margin-left: 220px;
+				float: left;
+				background-color: #a5d8da;
+				font-weight: bold;
+				cursor: pointer;
+			}
+			#zhao{
+				display: none; 
+				position: absolute; 	
+				top: 0%; 	
+				left: 0%; 	
+				width: 100%; 	
+				height: 1750px; 	
+				background-color: #dedcd8; 	
+				z-index:1001; 	
+				-moz-opacity: 0.6; 	
+				opacity:0.6; 	
+				filter: alpha(opacity=60);
+			}
+			#tanc1{
+				width: 720px;
+				height: 800px;
+				border:3px solid #aca9d3;
+				position: absolute;
+				top:130px;
+				left: 25%;
+				z-index:1003;
+				background-color: #ffffff;
+				display: none;
+				background-image: url(23.jpg) ;
+				font-family: "SimHei";
+				font-size: 40px;
+				color: #f61d0d;
+
+			}
+			#tanc2{
+				width: 720px;
+				height: 800px;
+				border:3px solid #aca9d3;
+				position: absolute;
+				top:130px;
+				left: 25%;
+				z-index:1003;
+				background-color: #ffffff;
+				display: none;
+				background-image: url(20.jpg) ;
+				font-family: "SimHei";
+				font-size: 40px;
+				color: #f61d0d;
+
+			}
+		</style>
+	</head>
+	<body>
+		<div id="zhao"></div>
+		<div class="tou">
+			<div class="cover">
+			<div class="touz">
+				<p style="background-color: #fac4cc;">HAPPY BIRTHDAY</p>
+				<p style="font-size: 25px;float: right;background-color: #fac4cc;">to小仙女吖</p>
+			</div>
+			</div>
+		</div>
+	
+		
+		
+					<script type="text/javascript">
+
+						function animate(obj,json,callback){
+							clearInterval(obj.timer);
+							obj.timer = setInterval(//计时器
+								function(){
+									var isStop = true;
+									for (var attr in json) {
+										if(attr=='opacity'){
+											var now = parseInt(getStyle(obj,attr)*100);
+										}
+										else{
+											var now = parseInt(getStyle(obj,attr));
+										}
+										var speed = (json[attr]-now)/5;
+										speed=speed>0?Math.ceil(speed):Math.floor(speed);
+										if(attr=='opacity'){
+											obj.style[attr]=(now+speed)/100;
+										}
+										else{
+											obj.style[attr] = now+speed+'px';
+										}
+
+										var current = now + speed;
+										if(json[attr]!==current){
+											isStop = false;
+										}
+									}
+									if(isStop){
+										clearInterval(obj.timer);
+										callback&&callback();
+									}
+									
+								},1);
+						}
+						function animate1(obj,json){
+							clearInterval(obj.timer);
+							obj.timer = setInterval(//计时器
+								function(){
+									var isStop = true;
+									for (var attr in json) {
+										if(attr=='opacity'){
+											var now = parseInt(getStyle(obj,attr)*100);
+										}
+										else{
+											var now = parseInt(getStyle(obj,attr));
+										}
+										var speed = (json[attr]-now)/5;
+										speed=speed>0?Math.ceil(speed):Math.floor(speed);
+										if(attr=='opacity'){
+											obj.style[attr]=(now+speed)/100;
+										}
+										else{
+											obj.style[attr] = now+speed+'px';
+										}
+
+										var current = now + speed;
+										if(json[attr]!==current){
+											isStop = false;
+										}
+									}
+									// if(isStop){
+									// 	clearInterval(obj.timer);
+									// 	callback&&callback();
+									// }
+									
+								},35);
+						}
+						function getStyle(obj,style) {
+							if(getComputedStyle(obj)){
+								return getComputedStyle(obj)[style];
+							}else{
+								obj.currentStyle[style];
+							}
+						}
+
+					</script>
+					<div class="box" id="box">
+						<div class="slider" id="slider">
+							<div class="slide"><img src="86.png" alt=""></div>
+							<div class="slide"><img src="81.png" alt=""></div>
+							<div class="slide"><img src="82.png" alt=""></div>
+							<div class="slide"><img src="83.png" alt=""></div>
+							<div class="slide"><img src="84.png" alt=""></div>
+							<div class="slide"><img src="85.png" alt=""></div>
+							<div class="slide"><img src="86.png" alt=""></div>
+							<div class="slide"><img src="81.png" alt=""></div>
+						</div>
+						<img src="zuo.png" id="left"/>
+						<img src="you.png"/ id="right">
+						<ul class="nav" id="nav">
+							<li class="active">1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+						</ul>
+					</div>
+					<div id="but">
+						<input type="button" value="点我观看在线表白"  name="but1" id="but1" onclick="zhao()" />
+					</div>
+					<div id="kuang">
+						<div id="butt">
+							<a href="我们的快乐时光？.html"><input type="button" value="往事不堪回首，你确定要点进来？"  name="but1" id="butt1"/></a>
+						</div>
+					</div>
+					<script type="text/javascript">
+						var slider=document.getElementById('slider');
+						var box=document.getElementById('box');
+						var left=document.getElementById('left');
+						var oNavlist=document.getElementById('nav').children;
+						var index=1;
+						function next(){
+							index++;
+							animate(slider,{left:-800*index},function(){
+								if(index==7){
+									slider.style.left='-800px';
+									index=1;
+							}
+							})
+							navChange();
+						}
+						function prev(){
+							index--;
+							animate(slider,{left:-800*index},function(){
+								if(index==0){
+									slider.style.left='-4800px';
+									index=6;
+							}
+							})
+							navChange();
+						}
+						var timer=setInterval(next,2000);
+						//鼠标划上时 停止轮播 箭头淡入
+						box.onmouseover=function(){
+							clearInterval(timer); 
+							animate(left,{opacity:80});
+							animate(right,{opacity:80});
+						}
+						//鼠标划出时 继续轮播 箭头淡出
+						box.onmouseout=function(){
+							animate(left,{opacity:0});
+							animate(right,{opacity:0});
+							timer=setInterval(next,2000);
+						}
+						right.onclick=next;
+						left.onclick=prev;
+						for(var i=0;i<oNavlist.length;i++){
+							oNavlist[i].idx=i;
+							oNavlist[i].onclick=function(){
+								index=this.idx+1;
+								animate(slider,{left:-800*index})
+								navChange();
+							}
+						}
+						function navChange(){
+							for(var i=0;i<oNavlist.length;i++){
+								oNavlist[i].className='';
+							}
+							if(index==7){
+								oNavlist[0].className='active';
+							}
+							else if(index==0){
+								oNavlist[5].className='active';
+							}
+							else{
+								oNavlist[index-1].className='active';
+							}
+						}
+						
+					</script>
+			
+				
+		<script>
+			window.onload = function() {
+				var cover = document.getElementsByClassName('cover')[0];
+				window.onscroll = function(){
+					var st = document.documentElement.scrollTop || document.body.scrollTop;
+					if (st>180) {
+						cover.style.position = 'fixed';
+					}else{
+						cover.style.position = 'static';
+					}
+				}
+			}
+		</script>
+		<div id="tanc">
+			<p style="float: right;margin-right: 10px;cursor: pointer;font-size: 20px;" onclick="zhaox()">X</p>
+			<div id="z">
+				<p style="padding-top: 20px;">这可能是一个想到啥说啥的片段式强行抒情。</p>
+				<p>――emmm这是一个过渡线，为了让下面那段显得不那么突兀――</p>
+				<p>从小到大，我经历的每一个时期，都会有一个最好的朋友，我们频繁地往来，分享秘密，互见家长，然后在最默契的时候，升学，慢慢疏远，被时间匆匆结束这段友情，最后彻底断了联系。你打破了这个时期。所有的朋友都在失去，只有你还在我身边。</p>
+				<p>我很喜欢这种我们现在这种模式。</p>
+				<p>不是每天都要磨磨唧唧，但是我开心的时候，可以跟你各种嘿嘿嘿。我想吐槽的时候，可以不用在心里os。我生气想骂人的时候，你会比我骂的还狠。我委屈难受的时候，可以在你这里随意释放。我有任何一点小事想说出来，都可以找你，我确信我可以得到回应。</p>
+				<p>我想吃羊蝎子，想的是我们两个边吃边唠。我看到情侣手链，觉得我们两个戴着好看。听到舍友说出去旅游，想来想去也只有跟你去才觉得舒服。我觉得你很普通，但是又被时刻提醒着你很特殊。</p>
+				<p>本来写了一段你男朋友相关的，后来删了，我给你的生日礼物干嘛要让他出镜，咱俩一起过多好。</p>
+				<p>啊想到大猪蹄子思路就被打断了，情也抒不了了，就这样拉倒吧。（气）</p>
+				<p>反正（最后总结脸），我有过很多朋友，但是真正够得上朋友定义的，认真算起来，只有你。</p>
+				<p>我很珍惜你。</p>
+				<p>同桌，生日快乐</p>
+				<input type="button" value="哇我好感动夸夸你"  name="t" id="tb1" onclick="good()" />
+				<input type="button" value="什么垃圾内心毫无波澜"  name="t" id="tb2" onclick="bad()"/>
+			</div>
+		</div>
+		<div id="tanc1">
+			<p style="float: right;margin-right: 10px;cursor: pointer;" onclick="goodx()">X</p>
+			<p style="margin-top: 500px;margin-left: 170px;">愿我们的友谊地久天长！</p>
+		</div>
+		<div id="tanc2">
+			<p style="float: right;margin-right: 10px;cursor: pointer;" onclick="badx()">X</p>
+			<p style="margin-top: 500px;margin-left: 170px;">垃圾，回去重选</p>
+		</div>
+		<script type="text/javascript">
+			function zhao(){
+				var tanc=document.getElementById("tanc");
+				var zhao=document.getElementById("zhao");
+				tanc.style.display='block';
+				zhao.style.display='block';
+			}
+			function zhaox(){
+				var tanc=document.getElementById("tanc");
+				var zhao=document.getElementById("zhao");
+				tanc.style.display='none';
+				zhao.style.display='none';
+			}
+			function good(){
+				var tanc1=document.getElementById("tanc1");
+				tanc1.style.display='block';
+			}
+			function goodx(){
+				var tanc1=document.getElementById("tanc1");
+				tanc1.style.display='none';
+			}
+			function bad(){
+				var tanc1=document.getElementById("tanc2");
+				tanc2.style.display='block';
+			}
+			function badx(){
+				var tanc1=document.getElementById("tanc2");
+				tanc2.style.display='none';
+			}
+		</script>
+	</body>
+</html>

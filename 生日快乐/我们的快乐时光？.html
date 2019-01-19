@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我们的快乐时光？</title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding: 0;
+			}
+			.tou{
+				width:100%;
+				height: 132px;
+				background-color: #ffffff;
+				margin-top: 0px;
+				z-index:100;
+				
+			}
+			.cover{
+				width: 100%;
+				height: 132px;
+				z-index:100;
+				background-color: #ffffff;
+				
+			}
+			.touz{
+				width: 1180px;
+				height: 132px;
+				margin:0 auto; 	
+				font-size: 60px;		
+			}
+			.neirong{
+				width: 100%;
+				height: 430px;
+			}
+			.zhong5{
+				width: 1180px;
+				height: 430px;
+				margin:0 auto;
+			}
+			#neil{
+				width: 995px;
+				height: 430px;
+				float: left;
+				background-color:#ffffff;
+				position: relative;
+			}
+			.neir{
+				width: 180px;
+				height: 632px;
+
+
+				position: absolute;
+				left: 1000px;
+				/*top:214px;*/
+			}
+
+			.what{
+				width: 500px;
+				height: 430px;
+				margin-left: 20px;
+				margin-top: 24px;
+				float: left;
+				display: block;
+				position: absolute;
+				z-index: 1px;
+			}
+			#box{
+				width:408px;
+				height:408px;
+				margin-left: 20px;
+				margin-top: 20px;
+				position: relative;
+				float: left;
+				border: 1px solid #d0cdc7;
+				}
+			#box1{
+				width:408px;
+				height:408px;
+				position:absolute; 
+				left:430.5px;
+				z-index: 2;
+				float: left;
+				margin-top: 20px;
+				border: 1px solid #d0cdc7;
+				display: none;
+				background-color: #ffffff;
+				}
+			#img1{
+				position:absolute;
+				left:0;
+				top:0;
+				border-right: 1px solid #d0cdc7;
+				}
+			#slider{
+				width:100px;
+				height:100px;
+				position:absolute;
+				left:0;
+				top:0;
+				background:#5f5e5a;
+				opacity:0.4;
+				cursor: move;
+				display:none; 
+				filter:alpha(opacity=40);
+				}
+			#img2{
+				position:absolute;
+				right:0;
+				top:0;
+				display:none; 
+				width:400px;
+				height:400px;
+				overflow:hidden;
+				z-index: 2;
+				}
+			#Bimg{
+				width: 800px;
+				height: 800px;
+				position:absolute;
+				left:0;
+				top:0;
+				z-index: 2;
+				}
+			#Bimg1{
+				width: 800px;
+				height: 800px;
+				position:absolute;
+				left:0;
+				top:0;
+				z-index: 2;
+				}
+			.neilx{
+				width: 410px;
+				height: 62px;
+				position: absolute;
+				left: 20px;
+				top: 450px;
+			}	
+			#right{
+				margin-left: 235px;
+			}
+			.tiao1{
+				width: 100%;
+				height: 400px;
+			}
+			#but{
+				width: 400px;
+				height: 60px;
+				margin:100px auto;
+			}
+			#but1{
+				width: 400px;
+				height: 60px;
+				font-size: 20px;
+				font-family:"Times New Roman", Times, serif;
+				border-radius: 5px;
+				background-color: #ffcccc;
+				font-weight: bold;
+				cursor: pointer;
+			}
+			#butt1{
+				width: 400px;
+				height: 60px;
+				font-size: 20px;
+				font-family:"Times New Roman", Times, serif;
+				border-radius: 5px;
+				background-color: #ffcccc;
+				font-weight: bold;
+				margin-top: 30px;
+				cursor: pointer;
+			}
+			#zhao{
+				display: none; 
+				position: absolute; 	
+				top: 0%; 	
+				left: 0%; 	
+				width: 100%; 	
+				height: 20200px; 	
+				background-color: #dedcd8; 	
+				z-index:1001; 	
+				-moz-opacity: 0.6; 	
+				opacity:0.6; 	
+				filter: alpha(opacity=60);
+			}
+			#tanc{
+				width: 550px;
+				height: 490px;
+				border:3px solid #aca9d3;
+				position: absolute;
+				top:19400px;
+				left: 30%;
+				z-index:1002;
+				background-color: #ffffff;
+				display: none;
+				background-image: url(s1.png) ;
+			}
+			#z{
+				width: 380px;
+				height: 490px;
+				margin:0 auto;
+				font-family:"FangSong";
+				font-size: 20px;
+			}
+			#tanc1{
+				width: 720px;
+				height: 800px;
+				border:3px solid #aca9d3;
+				position: absolute;
+				top:19350px;
+				left: 25%;
+				z-index:1003;
+				background-color: #ffffff;
+				display: none;
+				background-image: url(46.jpg) ;
+				font-family: "SimHei";
+				font-size: 40px;
+				color: #f61d0d;
+
+			}
+		</style>
+	</head>
+	<body>
+		<div id="zhao"></div>
+		<div class="tou">
+			<div class="cover">
+			<div class="touz">
+				<p>HAPPY BIRTHDAY</p>
+				<p style="font-size: 25px;float: right;">to小仙女吖</p>
+			</div>
+			</div>
+		</div>
+		<div class="neirong">
+			<div class="zhong5">
+				<div id="neil">
+					<div id="box">
+					    <div id="img1">
+					         <img src="58.png"/ id="pp0" style="display: block;">
+					         <div id="slider"></div>
+					  	</div>
+					</div>
+					<div id="box1">
+					    <div id="img2">
+					    	<img src="58.png"  id="Bimg"/ style="display: block;">
+					    </div>
+					</div class="zi">
+						<p style="font-weight: bold;margin-top: 100px;margin-left: 450px;font-size: 40px;font-family:'Times New Roman', Times, serif;">塑料姐妹情牌放大镜</p>
+						<p style="font-weight: bold;margin-top: 20px;margin-left: 460px;font-size: 40px;font-family:'Times New Roman', Times, serif;">360度无死角照亮</p>
+						<p style="font-weight: bold;margin-top: 20px;margin-left: 520px;font-size: 40px;font-family:'Times New Roman', Times, serif;">你的&nbsp&nbsp<span style="font-size: 65px;">美</span></p>
+					</div>
+					
+
+					<script>
+					 	var img1=document.getElementById("img1");
+						var img2=document.getElementById("img2");
+					 	var silder=document.getElementById("silder");
+					 	var Bimg=document.getElementById("Bimg");
+					 	var Bimg1=document.getElementById("Bimg1");
+					 	var box=document.getElementById("box");
+					 	var box1=document.getElementById("box1");
+					 	var neil=document.getElementById("neil");
+					 	var pp0=document.getElementById("pp0");
+					 	var pp1=document.getElementById("pp1");
+					 	var Sp0=document.getElementById("Sp0");
+					 	var Sp1=document.getElementById("Sp1");
+						img1.onmouseover=function(){
+					 		slider.style.display="block";
+					 		img2.style.display="block";
+					 		box1.style.display="block";
+					 	}
+					 	img1.onmouseout=function(){
+					 		slider.style.display="none";
+					 		img2.style.display="none";
+					 		box1.style.display="none";
+					 	}
+					 	img1.onmousemove=function(ev){
+						 	var oL=ev.clientX-box.offsetLeft-neil.offsetLeft-slider.offsetWidth/2;
+						 	var oT=ev.clientY-box.offsetTop-neil.offsetTop-slider.offsetHeight/2;
+						 	var oMaxw=img1.offsetWidth-slider.offsetWidth;
+						 	var oMaxh=img1.offsetHeight-slider.offsetHeight;
+						 	oL=oL>oMaxw?oMaxw:oL<0?0:oL;
+						 	oT=oT>oMaxh?oMaxh:oT<0?0:oT;
+						 	slider.style.left=oL+'px';
+						 	slider.style.top=oT+'px';
+						 	var maxOL = -oL*(400/285);
+						 	var maxOT = -oT*(400/305);
+						 	Bimg.style.left = maxOL + "px";
+						 	Bimg.style.top = maxOT + "px";
+						 	Bimg1.style.left = maxOL + "px";
+						 	Bimg1.style.top = maxOT + "px";
+						}
+						
+					</script>
+				
+			</div>
+		</div>
+		<p style="margin-top:60px; font-size: 40px;font-family:'Times New Roman', Times, serif;">请欣赏我们美好的回忆(又名黑历史大合集)</p>
+		<div class="tiao1">
+			<p style="margin-top: 40px;margin-bottom: 20px; font-size: 30px;font-family:'Times New Roman', Times, serif;">远足的欢乐？时光，和笑的像二傻子的我们</p>
+			<img src="1.jpg" style="width: 600px;height: 350px;" />
+			<img src="2.jpg" style="width: 600px;height: 350px;"/>
+		</div>
+		<div class="tiao1">
+			<p style="margin-top: 40px;margin-bottom: 20px; font-size: 30px;font-family:'Times New Roman', Times, serif;">打工中贫穷的我和接济我的好心人？(筷子精和大长腿？)</p>
+			<img src="6.jpg" style="width: 400px;height: 350px;" />
+			<img src="7.jpg" style="width: 400px;height: 350px;"/>
+			<img src="43.jpg" style="width: 400px;height: 350px;"/>
+		</div>
+		<div class="tiao1">
+			<p style="margin-top: 40px;margin-bottom: 20px; font-size: 30px;font-family:'Times New Roman', Times, serif;">kinds of头发放飞合集</p>
+			<img src="4.jpg" style="width: 400px;height: 350px;" />
+			<img src="5.jpg" style="width: 400px;height: 350px;"/>
+			<img src="8.jpg" style="width: 400px;height: 350px;"/>
+		</div>
+		<div class="tiao1" style="height: 1690px;">
+			<p style="margin-top: 40px;margin-bottom: 20px; font-size: 30px;font-family:'Times New Roman', Times, serif;">坐上那大巴车去野三坡~(多图预警)</p>
+			<img src="10.jpg" style="width: 400px;height: 350px;" />
+			<img src="14.jpg" style="width: 400px;height: 350px;"/>
+			<img src="15.jpg" style="width: 400px;height: 350px;"/>
+			<img src="16.jpg" style="width: 400px;height: 350px;" />
+			<img src="18.jpg" style="width: 400px;height: 350px;"/>
+			<img src="17.jpg" style="width: 400px;height: 350px;"/>
+			<img src="9.jpg" style="width: 450px;height: 350px;" />
+			<img src="13.jpg" style="width: 450px;height: 350px;"/>
+			<p style="margin-top: 20px;margin-bottom: 20px; font-size: 30px;font-family:'Times New Roman', Times, serif;">以及经典的 你的自拍和我眼中的你</p>
+			<img src="12.jpg" style="width: 350px;height: 500px;" />
+			<img src="11.jpg" style="width: 400px;height: 500px;"/>
+			<img src="bao1.jpg" style="width: 500px;height: 400px;"/>
+		</div>
+		<div class="tiao1" style="height: 1150px;">
+			<p style="margin-top: 40px;margin-bottom: 20px; font-size: 30px;font-family:'Times New Roman', Times, serif;">beautiful？游客照</p>
+			<img src="19.jpg" style="width: 400px;height: 500px;" />
+			<img src="23.jpg" style="width: 400px;height: 500px;"/>
+			<img src="24.jpg" style="width: 400px;height: 500px;"/>
+			<p style="margin-top: 40px;margin-bottom: 20px; font-size: 30px;font-family:'Times New Roman', Times, serif;">And.......</p>
+			<img src="45.jpg" style="width: 400px;height: 500px;"/>
+			<img src="bao2.jpg" style="width: 400px;height: 400px;"/>
+		</div>
+		<div class="tiao1" style="height: 550px;">
+			<p style="margin-top: 40px;margin-bottom: 20px; font-size: 30px;font-family:'Times New Roman', Times, serif;">然后是色..色情三连？(被发现了...)</p>
+			<img src="21.jpg" style="width: 400px;height: 500px;" />
+			<img src="22.jpg" style="width: 400px;height: 500px;"/>
+			<img src="20.jpg" style="width: 400px;height: 500px;"/>
+		</div>
+		<div class="tiao1" style="height: 1750px;">
+			<p style="margin-top: 40px;margin-bottom: 20px; font-size: 30px;font-family:'Times New Roman', Times, serif;">出现了！经典救生衣写真！(多图预警，我不做大哥好多年？)</p>
+			<img src="26.jpg" style="width: 400px;height: 500px;" />
+			<img src="27.jpg" style="width: 400px;height: 500px;"/>
+			<img src="29.jpg" style="width: 400px;height: 500px;"/>
+			<p style="margin-top: 40px;margin-bottom: 20px; font-size: 30px;font-family:'Times New Roman', Times, serif;">心疼的抱住圆圆的自己</p>
+			<img src="28.jpg" style="width: 400px;height: 500px;" />
+			<img src="30.jpg" style="width: 400px;height: 500px;"/>
+			<img src="bao7.jpg" style="width: 500px;height: 500px;"/>
+			<p style="margin-top: 40px;margin-bottom: 20px; font-size: 30px;font-family:'Times New Roman', Times, serif;">我"灵魂的仰望"也要拥有姓名</p>
+			<img src="31.jpg" style="width: 400px;height: 500px;" />
+			<img src="32.jpg" style="width: 400px;height: 500px;"/>
+			<img src="bao5.jpg" style="width: 500px;height: 500px;"/>
+		</div>
+		<p style="margin-top: 40px;margin-bottom: 40px; font-size: 30px;font-family:'Times New Roman', Times, serif;">野三坡之旅终于结束了，开心吗</p>
+		<img src="bao8.jpg" style="width: 500px;height: 500px;"/>
+		<p style="margin-top: 20px;margin-bottom: 20px; font-size: 30px;font-family:'Times New Roman', Times, serif;">你开心早了</p>
+		<div class="tiao1" style="height: 1850px;">
+			<p style="margin-top: 40px;margin-bottom: 20px; font-size: 30px;font-family:'Times New Roman', Times, serif;">双人合影耶！(又名我黑起来连自己都不放过？)</p>
+			<img src="33.jpg" style="width: 400px;height: 300px;" />
+			<img src="37.jpg" style="width: 400px;height: 300px;"/>
+			<img src="36.jpg" style="width: 400px;height: 300px;"/>
+			<img src="38.jpg" style="width: 400px;height: 300px;" />
+			<img src="39.jpg" style="width: 400px;height: 300px;"/>
+			<img src="40.jpg" style="width: 400px;height: 300px;"/>
+			<img src="bao6.jpg" style="width: 450px;height: 500px;"/>
+			<p style="margin-top: 40px;margin-bottom: 20px; font-size: 30px;font-family:'Times New Roman', Times, serif;">啊对了我觉得这张(我)还蛮好看的放一下~</p>
+			<img src="48.jpg" style="width: 300px;height: 500px;"/>
+			<img src="bao4.jpg" style="width: 450px;height: 500px;"/>
+		</div>
+		<div class="tiao1" style="height: 1500px;">
+			<p style="margin-top: 40px;margin-bottom: 20px; font-size: 30px;font-family:'Times New Roman', Times, serif;">咳咳，回归正题，这次是那些年你的非主流照</p>
+			<img src="49.jpg" style="width: 300px;height: 500px;" />
+			<img src="50.jpg" style="width: 300px;height: 500px;"/>
+			<img src="52.jpg" style="width: 300px;height: 500px;"/>
+			<img src="53.jpg" style="width: 300px;height: 500px;" />
+			<img src="47.jpg" style="width: 500px;height: 350px;"/>
+			<img src="54.jpg" style="width: 500px;height: 350px;"/>
+			<p style="margin-top: 40px;margin-bottom: 20px; font-size: 30px;font-family:'Times New Roman', Times, serif;">好像有什么奇怪的照片混进来了？</p>
+			<img src="bao5.jpg" style="width: 500px;height: 500px;"/>
+		</div>
+		<div class="tiao1" style="height: 8500px;">
+			<p style="margin-top: 40px;margin-bottom: 20px; font-size: 30px;font-family:'Times New Roman', Times, serif;">是从什么时候开始，突然变气质变好看的呢</p>
+			<img src="55.jpg" style="width: 900px;height: 1100px;" />
+			<img src="qi2.jpg" style="width: 800px;height: 1200px;"/>
+			<img src="56.jpg" style="width: 900px;height: 1100px;"/>
+			<img src="qi3.jpg" style="width: 800px;height: 1200px;" />
+			<img src="qi1.jpg" style="width: 1000px;height: 800px;"/>
+			<p style="margin-top: 40px;margin-bottom: 20px; font-size: 30px;font-family:'Times New Roman', Times, serif;">看累了吧，让我们活动活动脖子(其实我也不知道为什么就倒了)不过，讲真我觉得这两张可爱爆了</p>
+			<img src="qi4.jpg" style="width: 800px;height: 1000px;"/>
+			<img src="qi5.jpg" style="width: 800px;height: 1000px;"/>
+			<img src="bao4.jpg" style="width: 900px;height: 800px;"/>
+		</div>
+		<div id="but">
+			<input type="button" value="终于完啦!解放了解放了"  name="but1" id="but1" onclick="zhao()" />
+		</div>
+		<div id="tanc">
+			<p style="float: right;margin-right: 10px;cursor: pointer;" onclick="zhaox()">X</p>
+			<div id="z">
+				<p style="font-size: 20px;font-family:'Times New Roman', Times, serif;margin-top: 50px;">这个页面其实不是要挖你的黑历史啦，我只是觉得，亲要看着你从一个沙雕中二少女，学会了穿搭，化妆，拍照，变成了漂亮气质(偶尔性感？)的女孩,有一种吾家有女初长成的感觉，你在我心里永远都是最好看最棒的！我爱你！闫书毓！生日快乐！</p>
+				<p style="font-size: 20px;font-family:'Times New Roman', Times, serif;margin-top: 30px;">我爱你！闫身残！</p>
+				<p style="font-size: 20px;font-family:'Times New Roman', Times, serif;margin-top: 30px;">生日快乐！！！</p>
+				<input type="button" value="我是彩蛋"  name="but1" id="butt1" onclick="egg()" />
+			</div>
+		</div>
+		<div id="tanc1">
+			<p style="float: right;margin-right: 10px;cursor: pointer;" onclick="eggx()">X</p>
+			<p style="margin-top: 100px;">但是在爸爸心里你还是那个沙雕中二少女啊哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈！</p>
+		</div>
+		<script>
+			function zhao(){
+				var tanc=document.getElementById("tanc");
+				var zhao=document.getElementById("zhao");
+				tanc.style.display='block';
+				zhao.style.display='block';
+			}
+			function zhaox(){
+				var tanc=document.getElementById("tanc");
+				var zhao=document.getElementById("zhao");
+				tanc.style.display='none';
+				zhao.style.display='none';
+			}
+			function egg(){
+				var tanc1=document.getElementById("tanc1");
+				tanc1.style.display='block';
+			}
+			function eggx(){
+				var tanc1=document.getElementById("tanc1");
+				tanc1.style.display='none';
+			}
+			window.onload = function() {
+				var cover = document.getElementsByClassName('cover')[0];
+				window.onscroll = function(){
+					var st = document.documentElement.scrollTop || document.body.scrollTop;
+					if (st>180) {
+						cover.style.position = 'fixed';
+					}else{
+						cover.style.position = 'static';
+					}
+				}
+			}
+		</script>
+	</body>
+</html>
